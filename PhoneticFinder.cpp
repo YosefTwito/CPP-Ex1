@@ -33,6 +33,10 @@ namespace phonetic {
 						}
 					}
 				}
+				else {
+					ans.clear();
+					index=0;
+				}
 			}
 			else if(tolower(word[index]) == 'w'){
 				if (tolower(text[i]) == 'v'){
@@ -46,6 +50,10 @@ namespace phonetic {
 							index=0;
 						}
 					}
+				}
+				else {
+					ans.clear();
+					index=0;
 				}
 			}
 			else if(tolower(word[index]) == 'b'){
@@ -61,6 +69,10 @@ namespace phonetic {
 						}
 					}
 				}
+				else {
+					ans.clear();
+					index=0;
+				}
 			}
 			else if(tolower(word[index]) == 'f'){
 				if ((tolower(text[i]) == 'b') || (tolower(text[i]) == 'p')){
@@ -74,6 +86,10 @@ namespace phonetic {
 							index=0;
 						}
 					}
+				}
+				else {
+					ans.clear();
+					index=0;
 				}
 			}
 			else if(tolower(word[index]) == 'p'){
@@ -89,6 +105,10 @@ namespace phonetic {
 						}
 					}
 				}
+				else {
+					ans.clear();
+					index=0;
+				}
 			}
 			else if(tolower(word[index]) == 'g'){
 				if (tolower(text[i]) == 'j'){
@@ -102,6 +122,10 @@ namespace phonetic {
 							index=0;
 						}
 					}
+				}
+				else {
+					ans.clear();
+					index=0;
 				}
 			}
 			else if(tolower(word[index]) == 'j'){
@@ -117,6 +141,10 @@ namespace phonetic {
 						}
 					}
 				}
+				else {
+					ans.clear();
+					index=0;
+				}
 			}
 			else if(tolower(word[index]) == 'c'){
 				if ((tolower(text[i]) == 'k') || (tolower(text[i]) == 'q')){
@@ -130,6 +158,10 @@ namespace phonetic {
 							index=0;
 						}
 					}
+				}
+				else {
+					ans.clear();
+					index=0;
 				}
 			}
 			else if(tolower(word[index]) == 'k'){
@@ -145,6 +177,10 @@ namespace phonetic {
 						}
 					}
 				}
+				else {
+					ans.clear();
+					index=0;
+				}
 			}
 			else if(tolower(word[index]) == 'q'){
 				if ((tolower(text[i]) == 'c') || (tolower(text[i]) == 'k')){
@@ -158,6 +194,10 @@ namespace phonetic {
 							index=0;
 						}
 					}
+				}
+				else {
+					ans.clear();
+					index=0;
 				}
 			}
 			else if(tolower(word[index]) == 's'){
@@ -173,6 +213,10 @@ namespace phonetic {
 						}
 					}
 				}
+				else {
+					ans.clear();
+					index=0;
+				}
 			}
 			else if(tolower(word[index]) == 'z'){
 				if (tolower(text[i]) == 's'){
@@ -186,6 +230,10 @@ namespace phonetic {
 							index=0;
 						}
 					}
+				}
+				else {
+					ans.clear();
+					index=0;
 				}
 			}
 			else if(tolower(word[index]) == 'd'){
@@ -201,6 +249,10 @@ namespace phonetic {
 						}
 					}
 				}
+				else {
+					ans.clear();
+					index=0;
+				}
 			}
 			else if(tolower(word[index]) == 't'){
 				if (tolower(text[i]) == 'd'){
@@ -214,6 +266,10 @@ namespace phonetic {
 							index=0;
 						}
 					}
+				}
+				else {
+					ans.clear();
+					index=0;
 				}
 			}
 			else if(tolower(word[index]) == 'o'){
@@ -229,6 +285,10 @@ namespace phonetic {
 						}
 					}
 				}
+				else {
+					ans.clear();
+					index=0;
+				}
 			}
 			else if(tolower(word[index]) == 'u'){
 				if (tolower(text[i]) == 'o'){
@@ -242,6 +302,10 @@ namespace phonetic {
 							index=0;
 						}
 					}
+				}
+				else {
+					ans.clear();
+					index=0;
 				}
 			}
 			else if(tolower(word[index]) == 'i'){
@@ -257,6 +321,10 @@ namespace phonetic {
 						}
 					}
 				}
+				else {
+					ans.clear();
+					index=0;
+				}
 			}
 			else if(tolower(word[index]) == 'y'){
 				if (tolower(text[i]) == 'i'){
@@ -271,13 +339,17 @@ namespace phonetic {
 						}
 					}
 				}
+				else {
+					ans.clear();
+					index=0;
+				}
 			}
 			else{
 				ans.clear();
 				index=0;
 			}
 		}
-		throw std::invalid_argument( "Can't find the word index the text !" );
+		throw std::invalid_argument( "Can't find the word in the text !" );
 		return "--Bug--";
 	}
 }
