@@ -4,6 +4,7 @@ using namespace std;
 
 namespace phonetic {
 	string find(string text, string word) {
+		if ((word == "") || (word == " ")) { throw std::invalid_argument( "Can't find the word in the text !" ); }
 		string ans;
 		int index=0;
 		for (int i=0; i<text.length(); i++){
@@ -17,6 +18,7 @@ namespace phonetic {
 					else {
 							ans.clear();
 							index=0;
+							while ((text[i+1] != ' ') && (i+1!=text.length())) { i++; }
 						}
 				}
 			}
@@ -30,6 +32,7 @@ namespace phonetic {
 						else {
 							ans.clear();
 							index=0;
+							while ((text[i+1] != ' ') && (i+1!=text.length())) { i++; }
 						}
 					}
 				}
@@ -48,6 +51,7 @@ namespace phonetic {
 						else {
 							ans.clear();
 							index=0;
+							while ((text[i+1] != ' ') && (i+1!=text.length())) { i++; }
 						}
 					}
 				}
@@ -66,6 +70,7 @@ namespace phonetic {
 						else {
 							ans.clear();
 							index=0;
+							while ((text[i+1] != ' ') && (i+1!=text.length())) { i++; }
 						}
 					}
 				}
@@ -84,6 +89,7 @@ namespace phonetic {
 						else {
 							ans.clear();
 							index=0;
+							while ((text[i+1] != ' ') && (i+1!=text.length())) { i++; }
 						}
 					}
 				}
@@ -102,6 +108,7 @@ namespace phonetic {
 						else {
 							ans.clear();
 							index=0;
+							while ((text[i+1] != ' ') && (i+1!=text.length())) { i++; }
 						}
 					}
 				}
@@ -120,6 +127,7 @@ namespace phonetic {
 						else {
 							ans.clear();
 							index=0;
+							while ((text[i+1] != ' ') && (i+1!=text.length())) { i++; }
 						}
 					}
 				}
@@ -138,6 +146,7 @@ namespace phonetic {
 						else {
 							ans.clear();
 							index=0;
+							while ((text[i+1] != ' ') && (i+1!=text.length())) { i++; }
 						}
 					}
 				}
@@ -156,6 +165,7 @@ namespace phonetic {
 						else {
 							ans.clear();
 							index=0;
+							while ((text[i+1] != ' ') && (i+1!=text.length())) { i++; }
 						}
 					}
 				}
@@ -174,6 +184,7 @@ namespace phonetic {
 						else {
 							ans.clear();
 							index=0;
+							while ((text[i+1] != ' ') && (i+1!=text.length())) { i++; }
 						}
 					}
 				}
@@ -192,6 +203,7 @@ namespace phonetic {
 						else {
 							ans.clear();
 							index=0;
+							while ((text[i+1] != ' ') && (i+1!=text.length())) { i++; }
 						}
 					}
 				}
@@ -210,6 +222,7 @@ namespace phonetic {
 						else {
 							ans.clear();
 							index=0;
+							while ((text[i+1] != ' ') && (i+1!=text.length())) { i++; }
 						}
 					}
 				}
@@ -228,6 +241,7 @@ namespace phonetic {
 						else {
 							ans.clear();
 							index=0;
+							while ((text[i+1] != ' ') && (i+1!=text.length())) { i++; }
 						}
 					}
 				}
@@ -246,6 +260,7 @@ namespace phonetic {
 						else {
 							ans.clear();
 							index=0;
+							while ((text[i+1] != ' ') && (i+1!=text.length())) { i++; }
 						}
 					}
 				}
@@ -264,6 +279,7 @@ namespace phonetic {
 						else {
 							ans.clear();
 							index=0;
+							while ((text[i+1] != ' ') && (i+1!=text.length())) { i++; }
 						}
 					}
 				}
@@ -282,6 +298,7 @@ namespace phonetic {
 						else {
 							ans.clear();
 							index=0;
+							while ((text[i+1] != ' ') && (i+1!=text.length())) { i++; }
 						}
 					}
 				}
@@ -300,6 +317,7 @@ namespace phonetic {
 						else {
 							ans.clear();
 							index=0;
+							while ((text[i+1] != ' ') && (i+1!=text.length())) { i++; }
 						}
 					}
 				}
@@ -318,6 +336,7 @@ namespace phonetic {
 						else {
 							ans.clear();
 							index=0;
+							while ((text[i+1] != ' ') && (i+1!=text.length())) { i++; }
 						}
 					}
 				}
@@ -336,6 +355,7 @@ namespace phonetic {
 						else {
 							ans.clear();
 							index=0;
+							while ((text[i+1] != ' ') && (i+1!=text.length())) { i++; }
 						}
 					}
 				}

@@ -16,6 +16,8 @@ TEST_CASE("The Little Prince by Antoine de Saint-Exupery") {
 	CHECK(find(text, "feaotyful") == string("beautiful"));
 	CHECK(find(text, "duochet") == string("touched"));
 	CHECK(find(text, "belt") == string("felt"));
+	CHECK_THROWS_AS(find(text, ""), std::exception);
+	CHECK_THROWS_AS(find(text, " "), std::exception);
 	CHECK_THROWS_AS(find(text, "De"), std::exception);
 	CHECK_THROWS_AS(find(text, "little"), std::exception);
 	CHECK_THROWS_AS(find(text, "Prince"), std::exception);
@@ -110,6 +112,7 @@ TEST_CASE("Test replacement of c and k") {
 
 TEST_CASE("Test replacement of c and q") {
     string text = "A snipers greatest tool is precision  and good equipment";
+	CHECK(find(text, "a") == string("A"));
     CHECK(find(text, "PREQisioN") == string("precision"));
 	CHECK(find(text, "PREQisioN") != string("Precision"));
     CHECK(find(text, "precisioN") == string("precision"));
